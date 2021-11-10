@@ -235,15 +235,6 @@
                         <mxPoint x="490" y="440" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="648" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=5;" vertex="1" parent="1">
-                    <mxGeometry x="280" y="380" width="30" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="649" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=5;" vertex="1" parent="1">
-                    <mxGeometry x="-80" y="700" width="30" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="650" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=5;" vertex="1" parent="1">
-                    <mxGeometry x="390" y="710" width="30" height="60" as="geometry"/>
-                </mxCell>
             </root>
         </mxGraphModel>
     </diagram>
