@@ -3,15 +3,13 @@
 @section('body')
     <table>
     <h2>予約明細</h2>
-    <th>人数</th><th>チェックイン日付</th><th>チェックアウト日付</th><th>部屋ID</th><th>宿泊日</th><th>宿泊料</th>
+    <th>部屋ID</th><th>宿泊日</th><th>宿泊料</th>
     @foreach($items as $item)
     <tr>
-        <td>{{$item->reserve->number_of_people}}</th>
-        <td>{{$item->reserve->check_in_day}}</td>
-        <td>{{$item->reserve->check_out_day}}</th>
-        <td>{{$item->room_id}}</th>
+        <td>{{$item->room_id}}</td>
         <td>{{$item->day}}</td>
-        <td>{{$item->price}}</th>
+        <td>{{$item->price}}</td>
+        
     </tr>
     @endforeach
     </table>

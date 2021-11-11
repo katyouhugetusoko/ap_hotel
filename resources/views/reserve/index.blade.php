@@ -3,18 +3,22 @@
 @section('body')
     <table>
     <h2>予約者</h2>
-    <th>利用者名前</th><th>住所</th><th>電話番号</th><th>人数</th><th>チェックイン日付</th><th>チェックアウト日付</th>
+    <th>利用者名前</th><th>住所</th><th>電話番号</th><th>人数</th><th>チェックイン日付</th><th>チェックアウト日付</th><th>宿泊日</th><th>宿泊料</th>
     @foreach($items as $item)
     <tr>
-        <td>{{$item->user->name}}</th>
-        <td>{{$item->user->address}}</th>
-        <td>{{$item->user->tel}}</th>
-        <td>{{$item->number_of_people}}</th>
+        <td>{{$item->user->name}}</td>
+        <td>{{$item->user->address}}</td>
+        <td>{{$item->user->tel}}</td>
+        <td>{{$item->number_of_people}}</td>
         <td>{{$item->check_in_day}}</td>
-        <td>{{$item->check_out_day}}</th>
+        <td>{{$item->check_out_day}}</td>
+        <td>{{$item->rooms->first()->pivot->day}}</td>
+        <td>{{$item->rooms->first()->pivot->price}}</td>
     </tr>
     @endforeach
     </table>
+
+    
 @endsection
 
 <style>

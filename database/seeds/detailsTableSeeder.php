@@ -14,7 +14,7 @@ class detailsTableSeeder extends Seeder
     {
         $param = [
             'reserve_id' =>'1',
-            'room_id' =>'0730',
+            'room_id' =>'1',
             'day' =>'2021-11-21',
             'price' =>'6600円',
         ];
@@ -22,7 +22,7 @@ class detailsTableSeeder extends Seeder
 
         $param = [
             'reserve_id' =>'2',
-            'room_id' =>'0731',
+            'room_id' =>'2',
             'day' =>'2021-11-25',
             'price' =>'9999円',
         ];
