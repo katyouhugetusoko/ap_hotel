@@ -3,7 +3,7 @@
 @section('body')
     <table>
     <h2>部屋</h2>
-    <th>部屋種別ID</th><th>部屋番号</th><th>名称</th><th>宿泊可能人数</th>
+    <th>部屋種別ID</th><th>部屋番号</th><th>名称</th><th>宿泊可能人数</th><th>宿泊日</th><th>宿泊料</th>
 
     @foreach($items as $item)
     <tr>
@@ -11,6 +11,9 @@
         <td>{{$item->room_number}}</td>
         <td>{{$item->masuta->room_name}}</td>
         <td>{{$item->masuta->able_people}}</td>
+        <td>{{$item->reserves->first()->pivot->day}}</td>
+        <td>{{$item->reserves->first()->pivot->price}}</td>
+
     </tr>
     @endforeach
     </table>

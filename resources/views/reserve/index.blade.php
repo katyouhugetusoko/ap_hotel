@@ -14,7 +14,10 @@
         <td>{{$item->check_out_day}}</td>
         <td>{{$item->rooms->first()->pivot->day}}</td>
         <td>{{$item->rooms->first()->pivot->price}}</td>
+        <td>{{$item->rooms->first()->room_number}}</td>
+
     </tr>
+    
     @endforeach
     </table>
 
