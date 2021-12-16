@@ -13,10 +13,11 @@
         <td>{{$item->masuta->able_people}}</td>
         <td>{{$item->reserves->first()->pivot->day}}</td>
         <td>{{$item->reserves->first()->pivot->price}}</td>
-
     </tr>
     @endforeach
     </table>
+
+
 @endsection
 
 <style>
@@ -45,7 +46,6 @@ table th{
 }
 
 table td{
-  
   border:solid 1px #af9d85;
 }
 

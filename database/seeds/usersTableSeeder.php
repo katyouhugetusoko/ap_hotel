@@ -25,5 +25,11 @@ class usersTableSeeder extends Seeder
             'tel' =>'080-3663-0002',
         ];
         DB::table('users') ->insert($param);
+
+        
+        // factory(App\User::class,20)->create();
+
     }
+
 }
+

@@ -5,6 +5,7 @@
     <h2>予約者</h2>
     <th>利用者名前</th><th>住所</th><th>電話番号</th><th>人数</th><th>チェックイン日付</th><th>チェックアウト日付</th><th>宿泊日</th><th>宿泊料</th>
     @foreach($items as $item)
+    
     <tr>
         <td>{{$item->user->name}}</td>
         <td>{{$item->user->address}}</td>
@@ -15,7 +16,6 @@
         <td>{{$item->rooms->first()->pivot->day}}</td>
         <td>{{$item->rooms->first()->pivot->price}}</td>
         <td>{{$item->rooms->first()->room_number}}</td>
-
     </tr>
     
     @endforeach
@@ -48,10 +48,11 @@ table th{
   background-color: #66CC33;
   color: white;
   border:solid 1px #927141;
+
+  
 }
 
 table td{
-  
   border:solid 1px #af9d85;
 }
 </style>
